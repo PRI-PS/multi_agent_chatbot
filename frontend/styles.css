@@ -1,0 +1,125 @@
+/* Base setup */
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #F5F0FA; /* dreamy light background */
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Outer container */
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background: #E8DFF5; /* soft lavender */
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Cursive title */
+  .cursive-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 42px;
+    font-weight: normal;
+    color: #73ADE6;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Chat window (lavender background) */
+  #chat-window {
+    height: 400px;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: #C4B0E3;
+    border: 1px solid #c7c7db;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  /* Chat bubbles */
+  .message {
+    max-width: 75%;
+    padding: 16px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    word-wrap: break-word;
+    animation: fadeIn 0.4s ease-in-out;
+    color: white;
+  }
+  
+  /* User message bubble */
+  .user {
+    align-self: flex-end;
+    background-color: #DFBBE1;
+    color: #2e2e2e;
+    border-bottom-right-radius: 4px;
+  }
+  
+  /* Bot message bubble */
+  .bot {
+    align-self: flex-start;
+    background-color: #8264B8;
+    border-bottom-left-radius: 4px;
+  }
+  
+  /* Input area */
+  .input-area {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #fefefe;
+    color: #333;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 14px 18px;
+    font-size: 18px;
+    background-color: #94B6EA;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #73ADE6;
+    transform: translateY(-1px);
+  }
+  
+  /* Mic button */
+  #mic-btn {
+    background-color: #DFBBE1;
+    color: #444;
+  }
+  
+  #mic-btn:hover {
+    background-color: #C4B0E3;
+    transform: scale(1.05);
+  }
+  
+  /* Smooth message animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
